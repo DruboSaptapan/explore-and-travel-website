@@ -1,3 +1,12 @@
+/* utilities */
+h1{
+    color: #202336;
+    font-size: 64px;
+}
+h2{
+    color: #000;
+    font-size: 40px;
+}
 /* header start */
 header{
     background-image: url(../images/background.png);
@@ -28,3 +37,4 @@ header h1{
     background-image: url(../images/bg-3.png);
     background-size: cover;
 }
+/* features destination end */
