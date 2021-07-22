@@ -23,3 +23,8 @@ header h1{
 }
 /* header end */
 
+/* features destination start */
+.destination{
+    background-image: url(../images/bg-3.png);
+    background-size: cover;
+}
