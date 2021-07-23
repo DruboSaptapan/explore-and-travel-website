@@ -2,6 +2,9 @@
 body{
     overflow-x: hidden;
 }
+h2{
+    margin-bottom: 20px;
+}
 h5{
     line-height: 1.6em;
 }
@@ -41,16 +44,60 @@ header h1{
 /* features destination end */
 
 /* footer start */
-footer li{
+footer>.row li{
     line-height: 1.8em;
     list-style-type: none;
 }
-footer li a{
+footer>.row li a{
     color: #848484;
     text-decoration: none;
 }
-footer li:nth-child(1){
+footer>.row li:nth-child(1){
     margin-bottom: 15px;
     color: #000;
+}
+.social-icon a{
+    color: #000;
+}
+.social-icon li{
+    list-style-type: none;
+    margin: 0 20px;
+}
+.social-icon i{
+    font-size: 20px;
+}
+
+
+/* icon style */
+.fab{
+    transition: 0.4s ease;
+}
+
+/* twitter */
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+/* facebook */
+.fa-facebook-f:hover{
+    color: #1778F2;
+}
+
+/* instagram */
+.fa-instagram:hover{
+    background: -webkit-linear-gradient(224deg, #5b51c9, #9b36b8, #e02d77, #fdc964);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background: -webkit-linear-gradient(224deg, #5b51c9, #9b36b8, #e02d77, #fdc964); */
+}
+
+/* linkedin */
+.fa-linkedin-in:hover{
+    color: #0e76a8;
+}
+
+/* youtube */
+.fa-youtube:hover{
+    color: #ff0000;
 }
 /* footer end */
