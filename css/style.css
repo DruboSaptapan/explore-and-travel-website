@@ -41,6 +41,17 @@ header h1{
     background-image: url(../images/bg-3.png);
     background-size: cover;
 }
+.more{
+    color: #FB8F1D;
+    padding: 5px 7px;
+    transition: 0.4s ease-in;
+    border-radius: 8px;
+}
+.more:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: #FB8F1D;
+}
 /* features destination end */
 
 /* footer start */
