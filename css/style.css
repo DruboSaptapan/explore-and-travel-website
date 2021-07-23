@@ -1,13 +1,6 @@
 /* utilities */
-h1{
-    color: #202336;
-    font-size: 64px;
-}
-h2{
-    color: #000;
-    font-size: 40px;
-    line-height: 1.5em;
-    margin-bottom: 40px;
+body{
+    overflow-x: hidden;
 }
 h5{
     line-height: 1.6em;
@@ -21,12 +14,7 @@ p{
     margin-bottom: 120px;
 }
 /* header start */
-header{
-    background-image: url(../images/background.png);
-    background-size: cover;
-}
 header h1{
-    font-size: 64px;
     margin-bottom: 70px;
 }
 .btn-border{
@@ -54,6 +42,7 @@ header h1{
 
 /* footer start */
 footer li{
+    line-height: 1.8em;
     list-style-type: none;
 }
 footer li a{
