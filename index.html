@@ -9,19 +9,23 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
-
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <!-- animation css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- animation on scrolling css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -60,7 +64,7 @@
         <!-- holiday finder start -->
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-6 mt-5 animate__animated animate__backInLeft">
+                <div class="col-lg-6 mt-5" data-aos="fade-right" data-aos-duration="1500">
                     <h1>Explore and Travel</h1>
                     <div class="form">
                         <h3 class="my-3">Holiday finder</h3>
@@ -79,7 +83,7 @@
 
                                 <div class="col-lg-6 col-md-6 col-6 px-2 mt-4">
                                     <select name="wgtmsr" id="wgtmsr" class="px-3 py-2 dropdown">
-                                        <option value="kg">Activity</option>
+                                        <option value="activity">Activity</option>
                                         <option value="gm">Gm</option>
                                         <option value="pound">Pound</option>
                                         <option value="MetricTon">Metric ton</option>
@@ -90,7 +94,7 @@
 
                                 <div class="col-lg-6 col-md-6 col-6 px-2 mt-4">
                                     <select name="wgtmsr" id="wgtmsr" class="px-3 py-2 dropdown">
-                                        <option value="kg">Kg</option>
+                                        <option value="grade">Grade</option>
                                         <option value="gm">Gm</option>
                                         <option value="pound">Pound</option>
                                         <option value="MetricTon">Metric ton</option>
@@ -114,36 +118,8 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-5 animate__animated animate__backInRight">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            
-                            <div class="carousel-item active">
-                                <img src="images/svg/slide-1.jpg" class="img-fluid d-block w-100" alt="...">
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <img src="images/svg/slide-2.jpg" class="img-fluid d-block w-100" alt="...">
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <img src="images/svg/slide-3.jpg" class="img-fluid d-block w-100" alt="...">
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <img src="images/svg/slide-4.jpg" class="img-fluid d-block w-100" alt="...">
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <img src="images/svg/slide-5.jpg" class="img-fluid d-block w-100" alt="...">
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <img src="images/svg/slide-6.jpg" class="img-fluid d-block w-100" alt="...">
-                            </div>
-
-                        </div>
-                      </div>
+                <div class="col-lg-6 mt-5" data-aos="fade-left" data-aos-duration="3000">
+                    <img src="images/svg/slide-2.jpg" class="img-fluid d-block w-100" alt="img-1">
                 </div>
             </div>            
         </div>
@@ -158,10 +134,10 @@
         <!-- explore the world start -->
         <section class="container cust">
             <div class="row align-items-center">
-                <div class="col-lg-6 illustration animate__animated animate__backInLeft">
-                    <img class="img-fluid" src="images/main-2.png" alt="main-2">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="500" data-aos-easing="linear">
+                    <img class="img-fluid" src="images/svg/slide-5.jpg" alt="main-2">
                 </div>
-                <div class="col-lg-6 animate__animated animate__backInRight">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="600">
                     <h2>A new way to explore the world</h2>
                     <p style="color: #7D7987;">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
                     <button class="btn btn-bg px-4">Learn more</button>
@@ -171,15 +147,15 @@
         <!-- explore the world end -->
 
         <!-- features destinations end -->
-        <section class="container cust destination" id="destination">
+        <section class="container cust destination" id="destination" data-aos="zoom-out" data-aos-duration="1000" data-aos-offset="430">
             <div class="mb-4 d-flex align-items justify-content-between align-items-center">
                 <h2 class="mb-3">Featured Destinations</h2>
-                <span class="more">View All</span>            
+                <span class="more" style="width: 75px;">View All</span>            
             </div>
 
             <div class="row g-4">
 
-                <div class="col-lg-3 col-md-6 col-12 align-items-center position-relative">
+                <div class="col-lg-3 col-md-6 col-12 position-relative" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="450">
                     <div class="card">
                         <img src="images/places/image-1.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body position-absolute bottom-0 bg-light py-2">
@@ -189,7 +165,7 @@
                     </div>                
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 position-relative">
+                <div class="col-lg-3 col-md-6 col-12 position-relative" data-aos="fade-down" data-aos-duration="2000" data-aos-offset="500">
                     <div class="card">
                         <img src="images/places/image-2.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body position-absolute bottom-0 bg-light py-2">
@@ -199,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 position-relative">
+                <div class="col-lg-3 col-md-6 col-12 position-relative" data-aos="fade-down" data-aos-duration="2500" data-aos-offset="550">
                     <div class="card">
                         <img src="images/places/image-3.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body position-absolute bottom-0 bg-light py-2">
@@ -209,7 +185,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 position-relative">
+                <div class="col-lg-3 col-md-6 col-12 position-relative" data-aos="fade-down" data-aos-duration="3000" data-aos-offset="600">
                     <div class="card">
                         <img src="images/places/image-4.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body position-absolute bottom-0 bg-light py-2">
@@ -226,14 +202,14 @@
 
         <!-- thousand sunny start -->
         <section class="container cust">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-around">
                 <div class="col-lg-5 me-5">
                     <h2 class="my-3">Guides by Thousand Sunny</h2>
                     <p style="color: #7D7987;">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
                     <button class="btn btn-bg px-4">Download</button>
                 </div>
                 <div class="col-lg-6 illustration">
-                    <img class="img-fluid " src="images/main-3.png" alt="main-3">
+                    <img class="img-fluid " src="images/svg/slide-6.jpg" alt="main-3">
                 </div>
             </div>
         </section>
@@ -327,11 +303,11 @@
         <section class="container cust trend">
             <div class="mb-4 d-flex align-items justify-content-between align-items-center">
                 <h2 class="mb-3">Trending Stories</h2>
-                <span class="more">View All</span>
+                <span class="more" style="width: 75px;">View All</span>
             </div>
-            <div class="row">
+            <div class="row g-5">
                 
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <article class="content">
                         <img src="images/blogs/blog-1.png" alt="" class="img-fluid rounded-top">
                         <h5 class="my-3">The many benefits of taking a healing holiday</h5>
@@ -340,7 +316,7 @@
                     </article>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <article class="content">
                         <img src="images/blogs/blog-2.png" alt="" class="img-fluid rounded-top">
                         <h5 class="my-3">The best Kyoto restaurant to try Japanese food</h5>
@@ -349,7 +325,7 @@
                     </article>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <article class="content">
                         <img src="images/blogs/blog-3.png" alt="" class="img-fluid rounded-top">
                         <h5 class="my-3">Skip Chichen Itza and head to this remote Yucatan</h5>
@@ -358,7 +334,7 @@
                     </article>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <article class="content">
                         <img src="images/blogs/blog-4.png" alt="" class="img-fluid rounded-top">
                         <h5 class="my-3">Surf’s up at these beginner spots around the world</h5>
@@ -460,5 +436,9 @@
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- animation on scrolling js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
