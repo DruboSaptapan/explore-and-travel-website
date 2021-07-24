@@ -57,7 +57,7 @@ header h1{
 }
 .more{
     color: #FB8F1D;
-    padding: 5px 7px;
+    padding: 8px;
     transition: 0.4s ease-in;
     border-radius: .25rem;
 }
