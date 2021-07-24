@@ -14,6 +14,9 @@
 
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <!-- header start -->
@@ -57,70 +60,61 @@
         <!-- holiday finder start -->
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-6 mt-5">
+                <div class="col-lg-6 mt-5 animate__animated animate__backInLeft">
                     <h1>Explore and Travel</h1>
                     <div class="form">
                         <h3 class="my-3">Holiday finder</h3>
                         <form action="" class="mt-5">
                             <div class="row g-5">
                                 
-                                <div class="col-lg-3 col-md-6 col-6">
-                                    <div class="dropdown">
-                                        <a class="btn dropdwon-border dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Location</a>
-                                        
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Cox's Bazar</a></li>
-                                            <li><a class="dropdown-item" href="#">Lalbag Fort</a></li>
-                                            <li><a class="dropdown-item" href="#">Sompur Mahabihara</a></li>
-                                            <li><a class="dropdown-item" href="#">St. Martins Land</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="col-lg-6 col-md-6 col-6 px-2 mt-4">
+                                    <select name="wgtmsr" id="wgtmsr" class="px-3 py-2 dropdown">
+                                        <option value="location">Location</option>
+                                        <option value="raja-ampat">Raja Ampat</option>
+                                        <option value="fanjingshan">Fanjingshan</option>
+                                        <option value="vevey">Vevey</option>
+                                        <option value="skadar">Skadar</option>
+                                    </select>
                                 </div>
 
-                                <div class="col-lg-3 col-md-6 col-6">
-                                    <div class="dropdown">
-                                        <a class="btn dropdwon-border dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Activity</a>
-                                        
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Cox's Bazar</a></li>
-                                            <li><a class="dropdown-item" href="#">Lalbag Fort</a></li>
-                                            <li><a class="dropdown-item" href="#">Sompur Mahabihara</a></li>
-                                            <li><a class="dropdown-item" href="#">St. Martins Land</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="col-lg-6 col-md-6 col-6 px-2 mt-4">
+                                    <select name="wgtmsr" id="wgtmsr" class="px-3 py-2 dropdown">
+                                        <option value="kg">Activity</option>
+                                        <option value="gm">Gm</option>
+                                        <option value="pound">Pound</option>
+                                        <option value="MetricTon">Metric ton</option>
+                                        <option value="litre">Litre</option>
+                                        <option value="ounce">Ounce</option>
+                                    </select>
                                 </div>
 
-                                <div class="col-lg-3 col-md-6 col-6">
-                                    <div class="dropdown">
-                                        <a class="btn dropdwon-border dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Grade</a>
-                                        
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Cox's Bazar</a></li>
-                                            <li><a class="dropdown-item" href="#">Lalbag Fort</a></li>
-                                            <li><a class="dropdown-item" href="#">Sompur Mahabihara</a></li>
-                                            <li><a class="dropdown-item" href="#">St. Martins Land</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="col-lg-6 col-md-6 col-6 px-2 mt-4">
+                                    <select name="wgtmsr" id="wgtmsr" class="px-3 py-2 dropdown">
+                                        <option value="kg">Kg</option>
+                                        <option value="gm">Gm</option>
+                                        <option value="pound">Pound</option>
+                                        <option value="MetricTon">Metric ton</option>
+                                        <option value="litre">Litre</option>
+                                        <option value="ounce">Ounce</option>
+                                    </select>
                                 </div>
 
-                                <div class="col-lg-3 col-md-6 col-6">
-                                    <div class="dropdown">
-                                        <a class="btn dropdwon-border dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Date</a>
-                                        
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Cox's Bazar</a></li>
-                                            <li><a class="dropdown-item" href="#">Lalbag Fort</a></li>
-                                            <li><a class="dropdown-item" href="#">Sompur Mahabihara</a></li>
-                                            <li><a class="dropdown-item" href="#">St. Martins Land</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="col-lg-6 col-md-6 col-6 px-2 mt-4">
+                                    <select name="wgtmsr" id="wgtmsr" class="px-3 py-2 dropdown">
+                                        <option value="date">Date</option>
+                                        <option value="first">1st August</option>
+                                        <option value="pound">2nd August</option>
+                                        <option value="MetricTon">3rd August</option>
+                                        <option value="litre">4th August</option>
+                                        <option value="ounce">5th August</option>
+                                    </select>
                                 </div>
 
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-5">
+                <div class="col-lg-6 mt-5 animate__animated animate__backInRight">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             
@@ -164,10 +158,10 @@
         <!-- explore the world start -->
         <section class="container cust">
             <div class="row align-items-center">
-                <div class="col-lg-6 illustration">
+                <div class="col-lg-6 illustration animate__animated animate__backInLeft">
                     <img class="img-fluid" src="images/main-2.png" alt="main-2">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 animate__animated animate__backInRight">
                     <h2>A new way to explore the world</h2>
                     <p style="color: #7D7987;">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
                     <button class="btn btn-bg px-4">Learn more</button>
